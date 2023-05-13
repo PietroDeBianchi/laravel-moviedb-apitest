@@ -30,5 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    // We are going to edit the services.php file. Add the following code to config/services.php file.
+    'tmdb' => [
+        'endpoint' => env('TMDB_ENDPOINT'),
+        'api' => env('TMDB_APP_KEY'),
+    ]
 
 ];
