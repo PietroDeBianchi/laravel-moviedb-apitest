@@ -6,7 +6,7 @@
 
 {{-- chaghe the 'contents' of app.blade (also html elements) --}}
 @section('contents')
-    <div id="home-container">
+    <div id="series-container">
         <h5>series</h5>
     </div>
 @endsection
