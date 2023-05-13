@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http; // Import the Http class from Laravel
 use Illuminate\Http\Request; // Import the Request class from Laravel
 
-class DemoController extends Controller // Define the DemoController class and extend the base Controller class
+class MovieController extends Controller // Define the DemoController class and extend the base Controller class
 {
 
-    public function demo() // Define the demo() method
+    public function movie() // Define the demo() method
     {
 
         $tmdb_id = 436270; // Set the TMDB ID for the "Black Adam" movie
@@ -18,6 +18,6 @@ class DemoController extends Controller // Define the DemoController class and e
             ->get(config('services.tmdb.endpoint') . 'movie/' . $tmdb_id . '?api_key=' . config('services.tmdb.api'));
 
         // Return the demo view, passing in the retrieved data
-        return view('demo', compact('data'));
+        return view('movie', compact('data'));
     }
 }

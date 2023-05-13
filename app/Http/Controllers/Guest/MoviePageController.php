@@ -11,4 +11,10 @@ class MoviePageController extends Controller
     {
         return view('home');
     }
+
+    public function series()
+    {
+        // push the return to from web.php
+        return view('serie');
+    }
 }

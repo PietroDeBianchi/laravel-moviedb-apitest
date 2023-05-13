@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Guest\MoviePageController;
 // Use a routes for our application
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MoviePageController::class, 'index']);
 
 // Create a routes for our application
-Route::get('/demo', [DemoController::class, 'demo'])->name('demo');
+Route::get('/movie', [MovieController::class, 'movie'])->name('movie');
+
+Route::get('/serie', [MoviePageController::class, 'series'])->name('serie');
