@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Guest\MoviePageController;
+// Use a routes for our application
+use App\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MoviePageController::class, 'index']);
+
+// Create a routes for our application
+Route::get('/demo', [DemoController::class, 'demo'])->name('demo');
